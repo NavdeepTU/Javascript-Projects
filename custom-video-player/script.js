@@ -34,7 +34,7 @@ function updateProgress() {
 
     // Get seconds
     let secs = Math.floor(video.currentTime % 60);
-    if (mins < 10) {
+    if (secs < 10) {
         secs = '0' + String(secs);
     }
 
