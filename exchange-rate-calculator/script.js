@@ -14,7 +14,7 @@ function calculate() {
     fetch(`https://v6.exchangerate-api.com/v6/ba66d046eb0fb9e4030e78f6/latest/${currency_one}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             const rate = data.conversion_rates[currency_two];
 
             rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
